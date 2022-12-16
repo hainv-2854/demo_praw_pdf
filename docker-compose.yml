@@ -4,6 +4,8 @@ services:
   app:
     build: .
     command: bundle exec rails s -p 3001 -b "0.0.0.0"
+    volumes:
+      - .:/demo_praw_pdf
     ports:
       - "3001:3001"
     stdin_open: true
